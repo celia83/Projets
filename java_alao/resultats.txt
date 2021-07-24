@@ -1,0 +1,19 @@
+Voici la synthèse des exercices de l'apprenant : 
+
+Pour l'exercice 1, l'apprenant n'a pas donné la bonne réponse, puisqu'il a produit la phrase suivante : L'homme traversa la rue rapidement.
+Pour l'exercice 2, l'apprenant a donné la bonne réponse.
+Dans l'exercice 3, l'apprenant a produit la phrase suivante : Le petit chat marche. Il a l'air content.
+Dans l'exercice 4, l'apprenant a produit la phrase suivante : Le petit garçon a aussi l'air content. Il mange vite.
+La longueur moyenne des mots de la production : 3.7
+Les catégories utilisées : {NC=3, V=4, DET=4, PUNC=4, ADV=2, N=1, CLS=2, ADJ=4}
+La longueur moyenne des phrases : 5.0
+Le nombre de mots sans doublons utilisés : 12
+La richesse lexicale : 0.6
+Le mot content est répété 2 fois.
+Le mot l' est répété 2 fois.
+Le mot a est répété 2 fois.
+Le mot Le est répété 2 fois.
+Le mot air est répété 2 fois.
+Le mot petit est répété 2 fois.
+Le mot Il est répété 2 fois.
+Tous les mots utilisés par l'apprenant existent.

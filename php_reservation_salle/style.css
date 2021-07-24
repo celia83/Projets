@@ -1,0 +1,662 @@
+/*AJOUT DE POLICES*/
+@font-face {
+	font-family: "Roboto";
+	src: url("Polices/Roboto-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Roboto Light";
+	src: url("Polices/Roboto-Light.ttf");
+}
+
+@font-face {
+	font-family: "Treasure Map";
+	src: url("Polices/Treamd.ttf");
+}
+
+body {
+	background-color : RGB(163, 0, 20);
+	font : 18px "Roboto";
+}
+
+/*COMMUN A TOUTES LES PAGES */
+header.header_general {
+	background-color : RGB(51, 51, 51);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 101px;
+	box-shadow: 0px 0px 10px RGB(51,51,51);
+}
+
+header#header_connexion{
+	background-color : RGB(51, 51, 51);
+	margin-bottom: 100px;
+	box-shadow: 0px 0px 10px RGB(51,51,51);
+}
+
+h1 a.titre_general,
+h1, a.titre_general:visited{
+	font: 80px "Treasure Map";
+	text-decoration : none;
+	color : RGB(127, 127, 127);
+	padding-left : 20px;
+	padding-bottom: 20px;
+}
+
+h1#titre_connexion{
+	font: 80px "Treasure Map";
+	color : RGB(127, 127, 127);
+	padding-left : 50px;
+	padding-bottom: 20px;
+	margin-top : 0px;
+}
+
+
+h2 {
+	font: 30px "Roboto Light";
+	color: white;
+	display: flex;
+	justify-content: center;
+	padding: 0px 20px 0px 20px;
+}
+
+.fa-bars{
+	color : RGB(127, 127, 127);
+	font-size: 40px;
+	width: 80px;
+}
+
+ul a,
+ul a:visited{
+	text-decoration : none;
+	color : white;
+}
+
+button a, button a:visited{
+	text-decoration : none;
+	color : black;
+}
+
+ul {
+	list-style:none;
+	padding: 20px 20px 0px 20px;
+}
+
+li{
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+div#menu {
+	position: absolute;
+	z-index: 2;
+	right : 10px;
+}
+
+nav#menu_burger{
+	width: 210px;
+	height: 250px;
+	box-shadow: 0px 0px 10px RGB(51,51,51);
+	background-color: RGB(51,51,51);
+}
+
+div.filter_menu {
+	position: absolute;
+	z-index: 2;
+	top :200px;
+	right : 950px;
+	font : 16px Roboto;
+}
+
+nav.menu_filtre{
+	padding : 10px;
+	width: 210px;
+	height: 155px;
+	box-shadow: 2px 2px 10px RGB(51,51,51);
+	background-color: RGB(215,215,215);
+}
+
+div.checkbox_filtre{
+	margin:10px 15px 15px 10px;
+}
+
+.labels_filtre{
+	padding-left: 10px;
+}
+
+/*Page salle */
+
+
+#reserver, #retour, #option, #resa_gde_salle{
+	border:none;
+	border-radius:10px;
+	background:white;
+	width : 170px;
+	height : 40px;
+}
+
+#resa_gde_salle{
+	margin-bottom : 35px;
+}
+
+.option_resa{
+	display:flex;
+	flex-direction: column;
+	align-items : center;
+	justify-content: center;
+	margin:50px;
+}
+
+#reserver, input#option{
+	margin : 10px;
+}
+
+.Salles {
+	margin : 0px 0px 20px 0px;
+	padding : 20px 0px 20px 20px;
+	display : table;
+	border-bottom : 1px solid;
+	color : white;
+	font : 25px Roboto;
+}
+
+
+.places, .disponibilite, #warning{
+	color : white;
+	text-align : center;
+}
+
+.icones_infos{
+	color : white;
+	display:flex;
+	justify-content:space-around;
+	font : 35px Roboto;
+}
+
+fieldset.places_disponibilite{
+	display : table;
+	border:none;
+	color : white;
+	margin-top : 40px;
+}
+
+div.places_dispo{
+	display : table-row;
+}
+
+
+
+.places, .disponibilite{
+	display:table-cell;
+}
+
+.fa-users, .fa-calendar{
+	display : table-cell;
+	font-size : 35px;
+	margin-right : 20px;
+	margin-bottom : 30px;
+}
+
+#warning{
+	display:flex;
+	flex-direction: column;
+	font : 14px Roboto;
+	margin-bottom : 35px;
+}
+
+.fa-exclamation-triangle{
+	font-size : 35px;
+	margin-bottom: 15px;
+}
+
+div.fenetre_resa{
+	position: absolute;
+	z-index: 2;
+	margin-left : 265px;
+	margin-top :-500px;
+	width : 885px;
+	height : 515px;
+	background-color : RGB(163,0,20);
+}
+
+h3{
+	margin-top : 0px;
+	height : 50px;
+	background-color : RGB(51,51,51);
+	color : white;
+	box-shadow : 0px 3px 10px  RGB(51,51,51);
+	font : 28px Roboto;
+	text-align :center;
+	padding-top : 15px;
+}
+
+
+h4 {
+	font : 26px Roboto;
+	color : white;
+	margin-top : 0px;
+	text-align : center;
+}
+
+form#envoi_resa{
+	color : white;
+	display : flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding : 0px 40px 0px 40px;
+}
+
+.qui_reserve{
+	margin-bottom : 50px;
+}
+
+article.date_heure, .amenagements{
+	margin-top : 10px;
+}
+
+.amenagements {
+	display: flex;
+	justify-content: center;
+	font-size : 30px;
+}
+
+.fa-laptop{
+	padding : 0px 20px 0 20px;
+}
+
+.personne_resa{
+	margin-top : 10px;
+}
+
+#deroulant_inscrits, #deroulant_cours, #deroulant_formation{
+	border-radius : 5px;
+	border : none;
+	margin-top : 10px;
+	padding : 3px;
+	box-shadow : 2px 3px 10px  RGB(51,51,51);
+}
+
+.frequence_resa{
+	margin-bottom : 50px;
+}
+
+
+#heures, #minutes, input#periode{
+	resize: none;
+	width : 30px;
+	height : 20px;
+	border-radius : 5px;
+	border: none;
+	box-shadow : 2px 3px 10px  RGB(51,51,51);
+	font : 16px Roboto;
+	text-align : center;
+}
+
+/* PAGE DE CONNEXION*/
+#titre_connexion{
+	display : flex;
+	justify-content: center;
+}
+#zone_connexion{
+	display : flex;
+	flex-direction : column;
+	align-items : center;
+}
+
+#form_connexion{
+	background-color: RGB(51,51,51);
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px RGB(51,51,51);
+	width : 533px;
+}
+
+#idf {
+	display: flex;
+	justify-content: center;
+	color : white;
+	padding-bottom : 20px;
+}
+
+
+#mdp {
+	display: flex;
+	justify-content: center;
+	color : white;
+	padding-bottom : 20px
+}
+
+#bouton_connexion{
+	display: flex;
+	justify-content: center;
+	padding-bottom : 40px;
+}
+
+.idf_mdp{
+	padding-right : 25px;
+}
+
+#soumettre{
+	border:none;
+	padding:8px 30px 8px 30px;
+	border-radius:15px;
+	background:RGB(163,0,20);
+	color:white;
+	margin : 0px 30px;
+}
+
+/*PAGES AVEC CARTE*/
+section#zone_reservation{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+div#informations{
+	width: 213px;
+	height: 839px;
+	background-color: RGB(51,51,51);
+}
+
+div#carte_calendrier{
+	width: 987px;
+	height: 839px;
+	background-color : white;
+}
+
+section#boutons{
+	margin: 50px 150px 0px 0px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.filtre{
+	margin-right:400px;
+	height : 30px;
+	border-radius : 5px;
+	border : black;
+	border-width : thin;
+	background-color: RGB(215,215,215);
+	box-shadow : 2px 2px 5px black;
+}
+
+.filtre_resa{
+	margin-right : 950px;
+}
+
+input#modif_date, button#mode_calendrier{
+	width : 250px;
+	height : 50px;
+	border-radius : 5px;
+	border : black;
+	border-width : thin;
+	background-color: RGB(215,215,215);
+	font: 15px "Roboto";
+	margin-left : 20px;
+	box-shadow : 2px 2px 5px black;
+}
+
+.fa-calendar-alt{
+	font-size : 30px;
+	padding : 10px
+}
+
+button#mode_calendrier{
+	display:flex;
+	align-items: center;
+}
+
+
+/*PAGE CHANGEMENT MDP*/
+
+#zone_chg_mdp{
+	display : flex;
+	flex-direction : column;
+	align-items : center;
+	margin-top: 100px;
+}
+
+#form_changemdp{
+	background-color: RGB(51,51,51);
+	box-shadow: 5px 5px 10px RGB(51,51,51);
+	width : 805px;
+}
+
+div#ancien_mdp {
+	padding: 0px 0px 50px 160px;
+	color: white;
+}
+
+div#nouveau_mdp {
+	padding: 0px 0px 50px 100px;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+}
+
+#bouton_enregistrer{
+	display: flex;
+	justify-content: center;
+	padding-bottom : 40px;
+}
+
+
+#enregistrer{
+	border:none;
+	padding:8px 30px 8px 30px;
+	border-radius:5px;
+	background:white;
+	margin : 0px 30px;
+}
+
+hr {
+	margin-bottom: 30px;
+}
+
+section.nom_bouton {
+	padding-bottom: 10px;
+}
+
+input.zonetext_change_mdp {
+	border-radius: 15px;
+	border: none;
+	width: 183px;
+	height: 25px;
+}
+
+/*PAGE MES RESERVATIONS*/
+button.boutons_gestion{
+	width : 160px;
+	height : 40px;
+	border-radius : 5px;
+	border : black;
+	border-width : thin;
+	background-color: white;
+	font: 12px "Roboto";
+	margin: 10px;
+}
+
+div#zone_boutons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+article#nom_prenom{
+	color : white;
+	font-size : 20px;
+	margin: 20px;
+}
+
+table, td, th {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th.planning_resa {
+	background-color: RGB(51,51,51);
+	color : white;
+	font : 18px Roboto;
+	width: 175px;
+	height : 45px;
+}
+
+td.planning_resa {
+	height : 40px;
+	font : 12px Roboto;
+}
+
+div#planning{
+	width: 987px;
+	height: 646px;
+	background-color : white;
+}
+
+div#boutons_planning {
+	position: absolute;
+	z-index: 2;
+	top : 155px;
+	left :600px;
+	display: flex;
+	justify-content: center;
+	width: 350px;
+	height : 35px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius : 10px;
+}
+
+#semaine_precedente, #semaine_suivante, #semaine_actuelle{
+	margin:5px;
+	border : none;
+	background-color: rgba(0,0,0,0.0);
+	color:white;
+	font : 17px Roboto;
+}
+
+div#boutons_mes_reservations{
+	width: 213px;
+	height: 647px;
+	background-color: RGB(51,51,51);
+}
+
+/*PAGE MESSAGERIE*/
+
+
+li.boutons_messagerie{
+	padding-bottom: 0px;
+	text-align: left;
+	font-size : 15px;
+}
+
+hr.sep_messagerie {
+	margin: 10px 0px 10px 0px;
+}
+
+h2#titre_messagerie{
+	background-color: RGB(51,51,51);
+	width: 610px;
+	height: 65px;
+	border-radius: 5px;
+	border : lightgrey;
+	box-shadow: 0px 0px 10px RGB(51,51,51);
+	align-items: center;
+	margin-left: 525px;
+}
+
+#message{
+	resize: none;
+	border: none;
+	width :950px;
+	height : 550px;
+	margin: 15px 0px 30px 15px;
+}
+
+fieldset.zone_entete{
+	display:table;
+	border: none;
+	border-bottom : 1px solid;
+	margin-top : 10px;
+	font : 16px Roboto;
+	padding-bottom : 0px;
+}
+
+
+div.entete_messagerie{
+	display:table-row;
+}
+
+label.messagerie_labels, input.dest_exp_obj {
+	display: table-cell;
+	margin-bottom: 10px;
+}
+
+label.messagerie_labels {
+	padding-right: 10px;
+}
+
+input.dest_exp_obj {
+	padding: 10px 750px 10px 0px;
+	border :none;
+}
+
+input#destinataire, input#expediteur{
+	border-bottom : 1px solid black;
+}
+
+.supp_rep{
+	display: flex;
+	justify-content: end;
+	margin : 0px 30px 0px 30px;
+}
+
+#supprimer, #repondre{
+	margin-left : 20px;
+	border-radius : 5px ;
+	background-color: white;
+	border : none;
+	box-shadow: 2px 2px 2px grey;
+	width :170px;
+	height : 40px;
+	font : 16px Roboto;
+}
+
+/*Notation */
+.tde {
+	height:40px;
+	width:40px;
+	cursor:pointer;
+}
+
+#tde_1 {
+	margin-left:150px;
+}
+
+#note {
+	display: flex;
+}
+
+#zone {
+	margin-top : 100px;
+	margin-left: 350px;
+	margin-right: 350px;
+	background-color : RGB(51, 51, 51);
+	margin-bottom: 100px;
+	box-shadow: 0px 0px 10px RGB(51,51,51);
+	text-align: center;
+	color: white;
+}
+
+#t {
+	font-size: 23px;
+}
+
+#envoie {
+	border:none;
+	padding:8px 30px 8px 30px;
+	border-radius:15px;
+	background:white;
+	color:black;
+	margin-right: 40px;
+}
+
+

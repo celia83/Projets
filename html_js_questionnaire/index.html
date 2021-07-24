@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- Entête de la page-->
+		<p>MARTIN Célia - M1 SCL : Industrie de la Langue</p>
+		<title>Quizz Héraclès</title>
+		<meta charset="UTF-8"/> <!-- dit en quel encodage je suis-->
+		<link rel="stylesheet" href = "style.css"/> <!-- donne la feuille de style en css utilisée-->
+		<script type="text/javascript" src="jquery-3.4.1.js"></script> <!--appel de JQuery-->
+		 <script src="https://kit.fontawesome.com/bafcb5074c.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Quizz : Les douze travaux d'Héraclès</h1>
+		</header>
+		<section id ="progress_bar">
+			<h2>Votre progression </h2>
+			<div class="meter">
+				<span id ="progression"></span>
+			</div>
+		</section>
+		<section id = "score">
+		</section>
+		<section id ="questions">
+			<article class = "questionnaire" id = "answer1">
+				<h3>Question 1</h3>
+				<p>Héraclès est l'un des héros les plus vénérés de la Grèce antique. A quel héros de la mythologie romaine correspond-il ?</p>
+						<input class="zone_texte" id = "rep1" type = "text"></input>
+
+			</article>
+			<article class = "questionnaire" id = "answer2">
+				<h3>Question 2</h3>
+				<p>Quel roi ordonna à Héraclès d'accomplir ses 12 travaux ?</p>
+				<div>
+				   <input class = "question2 radio" id = "q2_choice1" name = "2" type = "radio" value = "eurysthee"><span id = "l1">Eurysthée</span><br>
+				   <input class = "question2 radio" id = "q2_choice2" name = "2" type = "radio" value = "sthenelos"><span id = "l2">Sthénélos</span><br>
+				   <input class = "question2 radio" id = "q2_choice3" name = "2" type = "radio" value = "nicippe"><span id = "l3">Nicippé</span><br>
+				</div>
+			</article>
+			<article class = "questionnaire" id = "answer3">	
+				<h3>Question 3</h3>
+				<p>De quelle contrée venait le lion dont Héraclès devait ramener la dépouille lors de son premier travail ?</p>
+				   <input class="zone_texte" id = "rep3" type = "text"></input>
+			</article>
+			<article class = "questionnaire" id = "answer4">
+				<h3>Question 4</h3>
+				<p>Héraclès est parvenu à tuer le lion</p>
+				<select class = "menu_deroulant" id="rep4">
+					<option class = "faux4" ></option>
+					<option class = "faux4">en le transperçant d'une flèche.</option>
+					<option id="juste4">en l'étouffant de ses propres mains.</option>
+					<option class = "faux4">en l'égorgeant avec son couteau.</option>
+				</select> 
+			</article>
+			<article class = "questionnaire" id = "answer5">	   
+				<h3>Question 5</h3>
+				<p>Dans quel lac vivait l'hydre qu'Héraclès a tuée lors de son deuxième travail ?</p>
+				   <input class="zone_texte" id = "rep5" type = "text"></input>
+			</article>
+			<article class = "questionnaire" id = "answer6">	   
+				<h3>Question 6</h3>
+				<p>Lors de ce combat, Héraclès reçut l'aide de son neveu . Comment s'appelait-il ?</p>
+				   <div>
+					   <input class="question6 radio" id = "q6_choice1" name = "6" type = "radio"><span id = "r1">Iolaos</span><br>
+					   <input class="question6 radio" id = "q6_choice2" name = "6" type = "radio"><span id = "r2">Alcide</span><br>
+					   <input class="question6 radio" id = "q6_choice3" name = "6" type = "radio"><span id = "r3">Iphiclès</span><br>
+					</div>
+			</article>
+			<article class = "questionnaire" id = "answer7">	   
+				<h3>Question 7</h3>
+				<p>De quelle région venait le cervidé aux sabots d'airain et aux bois d'or, qu'Héraclès a poursuivi inlassablement lors de son troisième travail ?</p>
+				   <div>
+					   <input class="question7 radio" id = "q7_choice1" name = "7" type = "radio"><span id = "c1">Cithéron</span><br>
+					   <input class="question7 radio" id = "q7_choice2" name = "7" type = "radio"><span id = "c2">Cérynie</span><br>
+					   <input class="question7 radio" id = "q7_choice3" name = "7" type = "radio"><span id = "c3">Céos</span><br>
+					</div>
+			</article>
+			<article class = "questionnaire" id = "answer8">	   
+				<h3>Question 8</h3>
+				<p>De quel animal s'agissait-il ?</p>
+				   <div id = "im8">
+					   <input class="image8" id="cerf" type = "image" src="Images/cerf.jpg" alt="cerf">
+					   <input class="image8" id="biche" type = "image" src="Images/biche.jpg" alt="biche">
+					   <input class="image8" id="gazelle" type = "image" src="Images/gazelle.jpg" alt="gazelle">
+					</div>
+			</article>
+			<article class = "questionnaire" id = "answer9">	   
+				<h3>Question 9</h3>
+				<p>De quelle région d'Arcadie`était originaire l'énorme sanglier qu'Héraclès a ramené vivant lors de son quatrième travail ?</p>
+				   <div>
+					   <input class="question9 radio" id = "q9_choice1" name = "9" type = "radio"><span id = "a1">Argos</span><br>
+					   <input class="question9 radio" id = "q9_choice2" name = "9" type = "radio"><span id = "a2">Scylla</span><br>
+					   <input class="question9 radio" id = "q9_choice3" name = "9" type = "radio"><span id = "a3">Érymanthe</span><br>
+					</div>
+			</article>
+			<article class = "questionnaire" id = "answer10">	   
+				<h3>Question 10</h3>
+				<p>Héraclès est parvenu à le capturer</p>
+				<select class = "menu_deroulant" id="rep10">
+					<option class = "faux10"></option>
+					<option id = "juste10">en le piégeant dans une cavité.</option>
+					<option class = "faux10">en le précipitant du haut d'un ravin.</option>
+					<option class = "faux10">en le noyant dans les eaux du Lacydon.</option>
+				</select>
+			</article>
+		</section>
+		<div id="suiv_prec">
+			<section id = "qprecedente">
+				<p><button class = "bouton_prec" id = "precedente" type="button"><i class="fas fa-chevron-left"></i>Question précédente</button></p>
+			</section>
+			<section id = "qsuivante">
+				<p id="suiv"><button class = "bouton_suiv" id = "suivante" type="button">Question Suivante <i class='fas fa-chevron-right'></i></button></p>
+			</section>
+		</div>
+		<div id="correc">
+			<section>
+				<p><input class = "bouton_correct" id = "correction" type="button" value="Corriger"/></p>
+			</section>
+		</div>
+		<a id ="bouton_recommencer" href="index.html">Recommencer</a>
+		<script>
+		var rep2, rep6, rep7, rep9, idq2, idq6, idq7, idq9, idq8, rempli1, rempli3, rempli5, rempli2, progress;
+		//Cacher les images vrai/faux au démarrage
+
+		
+		//Passer à la question suivante et à la question  précédente :
+		var question_courante = 1
+		//Question suivante
+		$("#suivante").on("click", function(){
+			$("#answer"+question_courante).hide();
+			question_suivante = question_courante + 1;
+			$("#answer"+question_suivante).fadeIn();
+			question_courante+=1;
+			// Cacher le bouton "suivant" quand on est à la question 10
+			if (question_courante == 10) {
+				$("#qsuivante").hide();
+			}
+			if (question_courante == 1) {
+				$("#qprecedente").hide();
+			}
+			else {
+				$("#qprecedente").fadeIn();
+			}
+		});
+		//Question précédente
+		$("#precedente").on("click", function(){
+			$("#answer"+question_courante).hide();
+			question_precedente = question_courante - 1;
+			$("#answer"+question_precedente).fadeIn();
+			question_courante-=1;
+			// Cacher le bouton "suivant" quand on est à la question 10
+			if (question_courante == 10) {
+				$("#qsuivante").hide();
+			} 
+			else {
+				$("#qsuivante").fadeIn();
+			}
+			if (question_courante == 1) {
+				$("#qprecedente").hide();
+			}
+		});
+		
+		// Faire varier la barre de progression
+			//zones de texte
+		var zone=[];
+		zone["rep1"] = 0;
+		zone["rep3"] = 0;
+		zone["rep5"] = 0;
+		
+		$(".zone_texte").on("input", function(){
+			var id = $(this).attr("id");
+			if (zone[id] == 0){
+				progress=parseInt($("#progression").css("width").slice(0,-2));
+				progress=progress+60;
+				$("#progression").css('width',progress + "px")
+				zone[id] = 1;
+			}
+			if ($(this).val()== ""){
+				progress=parseInt($("#progression").css("width").slice(0,-2));
+				progress=progress-60;
+				$("#progression").css('width',progress + "px")
+				zone[id] = 0;
+			}
+		});
+		
+			//menus déroulants
+		var lisderoul = [];
+		lisderoul["rep4"]=0;
+		lisderoul["rep10"]=0;
+		
+		$(".menu_deroulant").on("change", function(){
+			var id = $(this).attr("id");
+			if (lisderoul[id] == 0){
+				progress=parseInt($("#progression").css("width").slice(0,-2));
+				progress=progress+60;
+				$("#progression").css('width',progress + "px")
+				lisderoul[id] = 1;
+			}
+			else if (lisderoul[id] == 1 && ($(this).val() == "")){
+				progress=parseInt($("#progression").css("width").slice(0,-2));
+				progress=progress-60;
+				$("#progression").css('width',progress + "px")
+				lisderoul[id] = 0;
+			}
+		});
+		
+				//boutons radio
+		var radio=[];
+		radio["question2"]=0;
+		radio["question6"]=0;
+		radio["question7"]=0;
+		radio["question9"]=0;
+
+		$("input:radio.radio").on("change",function(){
+			var classe = $(this).attr("class");
+			var classe1 = classe.split(" ")[0]; // les boutons radio ont deux classes donc on trouve la premiere classe, qui nous interesse
+			if (radio[classe1] == 0){
+				progress=parseInt($("#progression").css("width").slice(0,-2));
+				progress=progress+60;
+				$("#progression").css('width',progress + "px")
+				radio[classe1] = 1;
+			}
+		});
+		
+		
+			//questions images
+		rempli8=0
+		$("input:image.image8").on("click",function(){
+			if (rempli8 == 0){
+				progress=parseInt($("#progression").css("width").slice(0,-2));
+				progress=progress+60;
+				$("#progression").css('width',progress + "px")
+				rempli8 = 1;
+			}
+		});
+		
+		//On récupère l'id des cases cochées aux questions 2,6,7 et 9 pour la future correction
+		$("input:radio.question2").on("change",function(){
+			idq2=$(this).attr("id");
+			rep2 = "#l"+idq2[9]; //récupérer le numéro de la réponse pour appliquer les couleurs de correction sur le texte
+			});
+			
+		$("input:radio.question6").on("change",function(){
+			idq6=$(this).attr("id");
+			rep6 = "#r"+idq6[9]; 
+			});
+			
+		$("input:radio.question7").on("change",function(){
+			idq7=$(this).attr("id");
+			rep7 = "#c"+idq7[9];
+			});
+		
+		$("input:radio.question9").on("change",function(){
+			idq9=$(this).attr("id");
+			rep9 = "#a"+idq9[9];
+			});
+			
+		//On récupère l'id de l'image sélectionnée à la question 8 pour la correction
+		$("input:image.image8").on("click",function(){
+			idq8=$(this).attr("id");
+			});
+
+		//Actions lorsqu'on clique sur "corriger"
+		$("#correction").on("click", function() {
+			// on n'a plus rien à corriger donc on cache le bouton corriger:
+			$("#correction").hide();
+			$("#suiv_prec").hide();
+			//Réafficher les questions :
+			for (var i=1; i<11; i++){
+				$("#answer"+i).fadeIn();
+			}
+			//Cacher la barre de progression et le bouton "suivant" si on n'est pas allé au bout des questions :
+			$("#progress_bar").hide();
+			$("#qsuivante").hide();
+			//Correction des questions 1, 3 et 5
+				var score = 0;
+				var q1 = $("#rep1").val().toLowerCase();
+				var q4 = $("#rep4").val().toLowerCase();
+				var q3 = $("#rep3").val().toLowerCase();
+				var q5 = $("#rep5").val().toLowerCase();
+				var q10 = $("#rep10").val().toLowerCase();
+			if (q1 =="hercule") {
+				$("#rep1").css("color", "#4CA86A");
+				$("#rep1").css("font-weight", "bold");
+				$("#answer1").append("<i class='fas fa-check-circle'></i>");
+				score += 1;
+			}
+			else {
+				$("#rep1").css("color", "#DD3D3D");
+				$("#answer1").append("<i class='fas fa-times-circle'></i>");
+				$("#rep1").attr('value',"Hercule")
+			}
+			
+			if (q3=="némée" || q3=="nemee") {
+				$("#rep3").css("color", "#4CA86A");
+				$("#rep3").css("font-weight", "bold");
+				$("#answer3").append("<i class='fas fa-check-circle'></i>");
+				score += 1;
+			}
+			else {
+				$("#rep3").css("color", "#DD3D3D");
+				$("#answer3").append("<i class='fas fa-times-circle'></i>");
+				$("#rep3").attr('value',"Némée")
+			}
+			
+			if (q5=="lerne") {
+				$("#rep5").css("color", "#4CA86A");
+				$("#rep5").css("font-weight", "bold");
+				$("#answer5").append("<i class='fas fa-check-circle'></i>");
+				score += 1;
+			}
+			else {
+				$("#rep5").css("color", "#DD3D3D");
+				$("#answer5").append("<i class='fas fa-times-circle'></i>");
+				$("#rep5").attr('value',"Lerne")
+			}
+			
+			//Correction des questions 4 et 10
+			if (q4 =="en l'étouffant de ses propres mains.") {
+				$("#rep4").css("color", "#4CA86A");
+				$("#rep4").css("font-weight", "bold");
+				$("#answer4").append("<i class='fas fa-check-circle'></i>");
+				$(".faux4").hide();
+				score += 1;
+			}
+			else {
+				$("#rep4").css("color", "#DD3D3D");
+				$("#juste4").css("font-weight", "bold");
+				$("#juste4").css("color", "#4CA86A");
+				$("#answer4").append("<i class='fas fa-times-circle'></i>");
+			}
+
+			if (q10 =="en le piégeant dans une cavité.") {
+				$("#rep10").css("color", "#4CA86A");
+				$("#rep10").css("font-weight", "bold");
+				$("#answer10").append("<i class='fas fa-check-circle'></i>");
+				$(".faux10").hide();
+				score += 1;
+			}
+			else {
+				$("#rep10").css("color", "#DD3D3D");
+				$("#juste10").css("color", "#4CA86A");
+				$("#juste10").css("font-weight", "bold");
+				$("#answer10").append("<i class='fas fa-times-circle'></i>");
+			}
+			
+			
+			//Correction des questions 2, 6, 7 et 9
+			if (idq2 == "q2_choice1"){
+				$(rep2).css("color", "#4CA86A");
+				$(rep2).css("font-weight", "bold");
+				$("#l1").append("<i class='fas fa-check-circle'></i>");
+				score += 1;
+			}
+			else {
+				$("#l1").css("color", "#4CA86A");
+				$("#l1").css("font-weight", "bold");
+				$(rep2).css("color", "#DD3D3D");
+				$(rep2).append("<i class='fas fa-times-circle'></i>");
+			}
+			
+			if (idq6 == "q6_choice3"){
+				$(rep6).css("color", "#4CA86A");
+				$(rep6).css("font-weight", "bold");
+				$("#r3").append("<i class='fas fa-check-circle'></i>");
+				score += 1;
+			}
+			else {
+				$("#r3").css("color", "#4CA86A");
+				$("#r3").css("font-weight", "bold");
+				$(rep6).css("color", "#DD3D3D");
+				$(rep6).append("<i class='fas fa-times-circle'></i>");
+			}
+			
+			if (idq7 == "q7_choice2"){
+				$(rep7).css("color", "#4CA86A");
+				$(rep7).css("font-weight", "bold");
+				$("#c2").append("<i class='fas fa-check-circle'></i>");
+				score += 1;
+			}
+			else {
+				$("#c2").css("color", "#4CA86A");
+				$("#c2").css("font-weight", "bold");
+				$(rep7).css("color", "#DD3D3D");
+				$(rep7).append("<i class='fas fa-times-circle'></i>");
+			}
+			
+			if (idq9 == "q9_choice3"){
+				$(rep9).css("color", "#4CA86A");
+				$(rep9).css("font-weight", "bold");
+				$("#a3").append("<i class='fas fa-check-circle'></i>");
+				score += 1;
+			}
+			else {
+				$("#a3").css("color", "#4CA86A");
+				$("#a3").css("font-weight", "bold");
+				$(rep9).css("color", "#DD3D3D");
+				$(rep9).append("<i class='fas fa-times-circle'></i>");
+			}
+			
+			// Correction question 8
+			if (idq8 =="cerf"){
+				$("#biche").hide();
+				$("#gazelle").hide();
+				$("#im8").append("<i class='fas fa-check-circle'></i>");
+				score += 1;
+			}
+			else {
+				$("#im8").append("<i class='fas fa-times-circle'></i>");
+				$("#biche").hide();
+				$("#gazelle").hide();
+			}
+			
+			//Faire apparaitre le score
+			$("#score").html("<section id = 'resultat'><h2>Score</h2><p id = 'result'>Votre score est de "+score+"/10</p></section>");
+			});
+		</script>
+	</body>
+</html>
